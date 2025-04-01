@@ -1,0 +1,320 @@
+/* Warna Soft Pink Palette */
+:root {
+    --pink-soft: #FFD1DC;
+    --pink-medium: #FFA7BA;
+    --pink-dark: #FF85A2;
+    --purple-light: #E2AFDE;
+    --cream: #FFF5E6;
+    --text: #333333;
+    --text-light: #666666;
+}
+
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pink-dark);
+    text-decoration: none;
+}
+
+.menu a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: var(--pink-soft);
+    color: var(--text);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Beranda */
+.beranda {
+    padding-top: 100px;
+    min-height: 125vh;
+    background-color: var(--cream);
+}
+
+.beranda .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.halo {
+    text-align: left;
+}
+
+.teks {
+    flex: 1;
+    text-align: justify;
+}
+
+.teks h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.teks h1 span {
+    color: var(--pink-dark);
+}
+
+.teks p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--text-light);
+}
+
+.tombol {
+    display: inline-block;
+    background-color: var(--pink-dark);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.tombol:hover {
+    background-color: var(--pink-medium);
+    transform: translateY(-3px);
+}
+
+.tombol.kedua {
+    background-color: var(--purple-light);
+    margin-left: 10px;
+}
+
+.foto {
+    flex: 1;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 0px;
+}
+
+/* Portfolio */
+.portfolio {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.portfolio h2, .prestasi h2, .kontak h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--pink-dark);
+    font-size: 2rem;
+}
+
+.karya-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.karya {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.karya:hover {
+    transform: translateY(-10px);
+}
+
+.karya img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.karya h3 {
+    padding: 15px;
+    color: var(--pink-dark);
+}
+
+.karya p {
+    padding: 0 15px 15px;
+    color: var(--text-light);
+}
+
+/* Prestasi */
+.prestasi {
+    padding: 60px 0;
+    background-color: var(--cream);
+}
+
+.prestasi-item {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prestasi-item h3 {
+    color: var(--pink-dark);
+    margin-bottom: 5px;
+}
+
+.tahun {
+    color: var(--pink-medium);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Kontak */
+.kontak {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.kontak-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.info {
+    background-color: var(--cream);
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.info h3 {
+    color: var(--pink-dark);
+    margin-bottom: 20px;
+}
+
+.info p {
+    margin-bottom: 15px;
+}
+
+.form {
+    background-color: var(--cream);
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.kontak h3, .form h3 {
+    color: #ff85a2;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form input, .form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .beranda .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .menu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .menu.active {
+        display: block;
+    }
+    
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .kontak-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .teks h1 {
+        font-size: 2rem;
+    }
+    
+    .karya-grid {
+        grid-template-columns: 1fr;
+    }
+}
